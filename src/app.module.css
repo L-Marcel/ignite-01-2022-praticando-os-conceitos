@@ -1,0 +1,75 @@
+.app header {
+  position: relative;
+  background-color: var(--gray-700);
+  height: 12.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.6885rem;
+}
+
+.app header > svg {
+  height: 3rem;
+  width: 7.875rem;
+}
+
+.app header div {
+  position: absolute;
+  display: flex;
+  gap: .5rem;
+  bottom: -1.6885rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.app section {
+  background-color: var(--gray-600);
+  min-height: calc(100vh - 12.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.68rem 0;
+  gap: 1.5rem;
+}
+
+.tasksInfo {
+  display: flex;
+  width: 46rem;
+  justify-content: space-between;
+}
+
+.tasksInfo p {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.tasksInfo p:nth-of-type(1) {
+  color: var(--blue);
+}
+
+.tasksInfo p:nth-of-type(2) {
+  color: var(--purple);
+}
+
+.tasksInfo p span {
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: .5rem;
+  font-size: .75rem;
+  color: var(--gray-100)
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+@media (max-width: 765px) {
+  .tasksInfo  {
+    width: 21rem;
+  }
+}
